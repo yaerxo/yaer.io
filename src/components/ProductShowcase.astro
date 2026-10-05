@@ -1,0 +1,8 @@
+---
+import { Image } from 'astro:assets';
+import appIcon from '../../public/assets/puckplus/app-icon.png';
+import PhoneSketches from './PhoneSketches.astro';
+import { products } from '../data/products';
+const product = products[0];
+---
+<section class="products-section container section-rule" id="products" aria-labelledby="product-title"><div class="product-grid"><div class="product-copy"><p class="eyebrow">Things we're building</p><div class="product-identity"><Image class="app-icon" src={appIcon} widths={[128, 256, 384]} sizes="100px" format="webp" alt="Puck+ app icon" /><div><h2 id="product-title">PuckPlus</h2><p class="product-tagline">More than the game.</p></div></div><p class="product-intro">A hockey companion built for players and families.</p><p class="section-copy">Born from the experience of navigating youth hockey as a parent, <strong><em>PuckPlus</em></strong> is being built to help hockey families keep the journey together and make what's next easier to navigate.</p>{product.url && <div class="product-meta"><a class="text-link" href={product.url}>Visit Puck+ <img src="/assets/icons/arrow-right.svg" alt="" /></a></div>}</div><PhoneSketches /></div></section>

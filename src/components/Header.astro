@@ -1,0 +1,8 @@
+---
+const links = [['Products', '/#products'], ['About', '/#about'], ['Contact', '/#contact']];
+---
+<header class="site-header"><div class="container header-inner">
+<a class="brand" href="/#home"><span class="wordmark">YAER<span class="brand-dot" aria-hidden="true">.</span></span><span class="brand-expansion">Yet Another<br />Elegant Resolution</span></a>
+<nav class="desktop-nav" aria-label="Main navigation">{links.map(([label, href]) => <a href={href}>{label}</a>)}<a class="button button-small" href="/#contact">Get in Touch</a></nav>
+<details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation">{links.map(([label, href]) => <a href={href}>{label}</a>)}</nav></details>
+</div></header>

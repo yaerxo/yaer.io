@@ -1,0 +1,8 @@
+---
+const ideas = [
+ {icon: 'magnifying-glass', title: 'Observe', text: 'We notice problems in everyday life.'},
+ {icon: 'lightbulb', title: 'Explore', text: "We explore whether there’s a better way."},
+ {icon: 'gear', title: 'Resolve', text: 'We build the ideas worth pursuing.'},
+];
+---
+<section class="philosophy-section container section-rule" aria-labelledby="philosophy-title"><p class="eyebrow">Our philosophy</p><h2 id="philosophy-title">Observe. Explore. Resolve.</h2><div class="philosophy-grid">{ideas.map(idea => <article><img src={`/assets/icons/${idea.icon}.svg`} width="40" height="40" alt="" /><h3>{idea.title}</h3><p>{idea.text}</p></article>)}</div></section>
