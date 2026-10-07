@@ -18,7 +18,7 @@ Focused comparison: /tmp/yaer-hero-comparison.jpg. Source and final render opene
 - Typography: self-hosted Inter and native fallbacks; controlled weights, large three-line hero, restrained uppercase eyebrows, comfortable copy. Handwritten editorial text uses a local cursive fallback. Slight font-metric differences from the rendered reference are P3.
 - Spacing/layout: matching editorial two-column hero/product/About layouts, fine section rules, three philosophy columns, responsive single-column mobile layout. Written contact specification intentionally extends the reference.
 - Colors: warm #fafaf8 canvas, navy/charcoal text, gray secondary copy, electric-blue links/CTA/dot. Contact is the sole dark section, as specified. No colorful cards or gradients.
-- Assets: original supplied PuckPlus icon hash matches assets/icon.png; no redraw/recolor/recreation. Raster sketch matches graphite art direction; Phosphor monochrome library icons and MIT license included. Ribbon/orb hero is not used.
+- Assets: original supplied PuckPlus icon hash matches src/assets/puckplus-icon.png; no redraw/recolor/recreation. Raster sketch matches graphite art direction; Phosphor monochrome library icons and MIT license included. Ribbon/orb hero is not used.
 - Copy: primary statement, brand expansion, product origin/tagline, Observe/Explore/Resolve, warm About text, and contact match the new spec. Earlier family line retained. Product link intentionally omitted at user's instruction until puckplus.app is live. No fake claims or metrics.
 
 ## Interaction and responsive evidence

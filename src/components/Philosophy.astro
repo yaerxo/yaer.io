@@ -1,8 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import observe from '../assets/philosophy/observe.png';
+import explore from '../assets/philosophy/explore.png';
+import resolve from '../assets/philosophy/resolve.png';
 const ideas = [
- {icon: 'magnifying-glass', title: 'Observe', text: 'We notice problems in everyday life.'},
- {icon: 'lightbulb', title: 'Explore', text: "We explore whether there’s a better way."},
- {icon: 'gear', title: 'Resolve', text: 'We build the ideas worth pursuing.'},
+ {icon: observe, title: 'Observe', text: 'Notice what could be better.'},
+ {icon: explore, title: 'Explore', text: "Question, experiment, and discover."},
+ {icon: resolve, title: 'Resolve', text: 'Turn ideas into useful products.'},
 ];
 ---
-<section class="philosophy-section container section-rule" aria-labelledby="philosophy-title"><p class="eyebrow">Our philosophy</p><h2 id="philosophy-title">Observe. Explore. Resolve.</h2><div class="philosophy-grid">{ideas.map(idea => <article><img src={`/assets/icons/${idea.icon}.svg`} width="40" height="40" alt="" /><h3>{idea.title}</h3><p>{idea.text}</p></article>)}</div></section>
+<section class="philosophy-section container section-rule" aria-labelledby="philosophy-title"><p class="eyebrow">Our philosophy</p><h2 id="philosophy-title">Observe. Explore. Resolve.</h2><div class="philosophy-grid">{ideas.map(idea => <article><Image src={idea.icon} width={40} height={40} widths={[40, 80, 120]} sizes="40px" format="webp" alt="" /><h3>{idea.title}</h3><p>{idea.text}</p></article>)}</div></section>

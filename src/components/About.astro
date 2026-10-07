@@ -1,8 +1,5 @@
 ---
-const principles = [
- {icon:'users', title:'Real-world inspiration', text:'Ideas shaped by everyday experiences.'},
- {icon:'heart', title:'Built with curiosity', text:"Always exploring whether there’s a better way."},
- {icon:'leaf', title:'Thoughtful and practical', text:'Solutions designed to be useful, simple, and lasting.'},
-];
+import { Image } from 'astro:assets';
+import childWord from '../assets/child-word.png';
 ---
-<section class="about-section container section-rule" id="about" aria-labelledby="about-title"><p class="eyebrow">About YAER</p><div class="about-grid"><div><h2 id="about-title">Ideas inspired by everyday life.</h2><p class="section-copy">YAER is where curiosity meets problem solving. Our ideas often begin with something surprisingly simple:</p><p class="section-copy about-question"><em>“Why does this have to be so difficult?”</em></p><p class="section-copy">We explore better ways to solve everyday problems and turn the ideas worth pursuing into thoughtful, practical products.</p><p class="section-copy">Sometimes, the answer becomes a product.</p></div><div class="about-principles">{principles.map(principle => <article><img src={`/assets/icons/${principle.icon}.svg`} width="34" height="34" alt="" /><div><h3>{principle.title}</h3><p>{principle.text}</p></div></article>)}</div></div></section>
+<section class="about-section container section-rule" id="about" aria-labelledby="about-title"><p class="eyebrow">About YAER</p><div class="about-grid"><div><h2 id="about-title">Ideas inspired by everyday life.</h2><p class="section-copy">YAER is where curiosity meets problem solving. Our ideas often begin with something surprisingly simple:</p><p class="section-copy about-question"><em>“Why does this have to be so difficult?”</em></p><p class="section-copy">We explore better ways to solve everyday problems and turn the ideas worth pursuing into thoughtful, practical products.</p><p class="section-copy">Sometimes, the answer becomes a product.</p></div><div class="about-illustration"><Image src={childWord} widths={[320, 640, 960]} sizes="(max-width: 760px) 80vw, 30vw" format="webp" alt="Pencil illustration of a curious child looking upward above the YAER wordmark." loading="lazy" /></div></div></section>
