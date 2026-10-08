@@ -1,6 +1,6 @@
 # YAER.io
 
-Corporate/product-studio website for YAER LLC. Products inspired by everyday life, built with curiosity and technology. PuckPlus is the first product, currently in development. Built with Astro and TypeScript, with static HTML, local assets, a self-hosted Inter font with system fallbacks, and no client-side JavaScript or tracking.
+Corporate/product-studio website for YAER LLC. Products inspired by everyday life, built with curiosity and care. PuckPlus is the first product, currently in development. Built with Astro and TypeScript, with static HTML, local assets, a self-hosted Inter font with system fallbacks, and no client-side JavaScript or tracking.
 
 ## Local development
 
